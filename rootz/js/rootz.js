@@ -33,7 +33,7 @@ function choosePetPlayer(){
 
     sectionSelectPet.style.display = 'none'
 
-    sectionSelectAttack.style.display = 'block'
+    sectionSelectAttack.style.display = 'flex'
 
     let petPlayer = document.getElementById('pet-player')
 
@@ -135,22 +135,30 @@ checkLifes = () => {
 
 createMessage = (winnermsg) => {
     console.log('+++>'+winnermsg)
-    let sectionMessage = document.getElementById('message')
+    let sectionMessage = document.getElementById('result')
+    let sectionattackPlayer = document.getElementById('attackPlayer')
+    let sectionattackEnemy = document.getElementById('attackEnemy')
 
-    let message = document.createElement('p')
-    message.innerHTML = 'Your pet attack with <b>'+ attackPlayer + ',</b> the Enemy pet attack with <b>' + attackEnemy + '</b> ' + winnermsg
-    //console.log(message)
-    sectionMessage.appendChild(message)
+    let newattackPlayer = document.createElement('p')
+    let newattackEnemy = document.createElement('p')
+
+    sectionMessage.innerHTML = winnermsg
+    newattackPlayer.innerHTML = attackPlayer
+    newattackEnemy.innerHTML = attackEnemy
+
+    sectionattackPlayer.appendChild(newattackPlayer)
+    sectionattackEnemy.appendChild(newattackEnemy)
+    // let message = document.createElement('p')
+    // message.innerHTML = 'Your pet attack with <b>'+ attackPlayer + ',</b> the Enemy pet attack with <b>' + attackEnemy + '</b> ' + winnermsg
+    // console.log(message)
+    // sectionMessage.appendChild(message)
 }
 
 function createMessageFinal(finalmsg){
-    let sectionMessage = document.getElementById('message')
+    let sectionMessage = document.getElementById('result')
 
-    let message = document.createElement('p')
-    message.innerHTML = finalmsg
-
-    sectionMessage.appendChild(message)
-    
+    sectionMessage.innerHTML = finalmsg
+  
     disableButtons()
     
     //Oculta btn reiniciar hasta que termine el juego 

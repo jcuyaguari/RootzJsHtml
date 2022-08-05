@@ -9,11 +9,12 @@
 <body>
 
 	<section id="select-pet">
+		
+		<img class="up" src="./assets/zombieUp.png" alt="Zombie">
 
-		<h1 id="title" class="title">ROOT'Z GAME</h1>
-		<h2>⚡🐳 🪴</h2>
-
-		<h2 class="subtitle">Choose the Pet: </h2>
+		<h1 id="title" class="title">ROOT'Z GAME⚡🐳 🪴</h1>
+	
+		<h2 class="subtitle">Choose the Pet </h2>
 
 		<div class="cards">
 
@@ -42,26 +43,40 @@
     </section>
 
 	<section id="select-attack">
-		<h2>Choose the Attack: </h2>
+		<img class="up" src="./assets/zombieUp.png" alt="Zombie">
 
-		<p>The Player Pet <span id="pet-player"> has: </span> => <span id="lifes-player"> 3 </span> power </p>
-		<p>The Enemy Pet <span id="pet-enemy"> has: </span> => <span id="lifes-enemy"> 3</span> power </p>
+		<h1 id="title" class="title">ROOT'Z GAME⚡🐳 🪴</h1>
 
-		<p>
-			<button id="button-fire">⚡ </button>
-			<button id="button-watter">🐳 </button>
-			<button id="button-air">🪴 </button>
-		</p>
+		<h2 class="subtitle">Choose the Attack: </h2>
+
+		<div>
+			<button class="buttons-attack" id="button-fire"> FIRE⚡ </button>
+			<button class="buttons-attack" id="button-watter"> WATTER 🐳 </button>
+			<button class="buttons-attack" id="button-air"> AIR 🪴 </button>
+		</div>
+
+		<div id="message">
+			<p id="result">Just do it! 🐶</p>
+				
+			<section id="restart">
+				<button id="button-restart">Restart</button>
+			</section>
+		</div>		
+
+		<div>
+			<div id="attackPlayer">
+
+			</div>
+
+			<div id="attackEnemy">
+
+			</div>
+			<p>The Player Pet <span id="pet-player"> has: </span> => <span id="lifes-player"> 3 </span> power </p>
+			<p>The Enemy Pet <span id="pet-enemy"> has: </span> => <span id="lifes-enemy"> 3</span> power </p>
+		</div>
+		
         
     </section>
-
-	<section id="message">
-		<p>La ataco con Fuegooo</p>
-	</section>
-
-	<section id="restart">
-		<button id="button-restart">Restart</button>
-	</section>
 
 	<script src="./js/rootz.js"></script>
 </body>

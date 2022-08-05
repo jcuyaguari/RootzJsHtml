@@ -6,6 +6,8 @@ https://colorhunt.co/palettes/neon
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 html {
     position: fixed;
@@ -14,7 +16,9 @@ html {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    background-image: linear-gradient(to right bottom, #1d1d16, #1e1f18, #1f201a, #21221c, #22231e);
+    
 }
 
 #select-pet {
@@ -24,40 +28,114 @@ html {
     align-items: center;
 }
 
+.up {
+    width: 15%;
+}
+
 .title {
-    color: #436c87;
+    color: #7c1c37;
     width: 700px;
     height: 80px;
     /* background-color: #e6edea; */
     font-family: 'Righteous', cursive;
     font-size: 60px;
     text-align: center;
+    margin-top: -25px;
 }
 
 .subtitle {
-    color: #EBD671;
+    color: #b4b2a4;
     font-size: 28px;
 }
 
 .cards {
     display: flex; /*Coloca las tarjetas una a lado de la otra*/ 
-    gap:10px; /*Espaciado entre cajas*/
+    gap:20px; /*Espaciado entre cajas*/
 }
 
 .cards-rootz {
-    width: 170px;
-    height: 100px;
-    background: #85C88A;
+    width: 320px;
+    height: 190px;
+    background: #343333;
     padding: 10px;
     box-sizing: border-box;  /* Para no incrementar el tamano de la caja  */
     border-radius: 10px;
     display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
 }
 
 .cards-rootz img{
     width: 80px;
 }
 
+#button-pet{
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    background: #c4ccce;
+    border: 1px solid;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+}
+
+
 input {
     display: none;
+}
+
+#select-attack{
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-attack{
+    background-color: #a32f15;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    width: 130px;
+    color: white;
+}
+
+#message{
+    width: 280px;
+    background: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex; /*Se usa justify-content: center; si se tiene solo display, cuando se usa flex-direction: column; se tiene que cambiar a align-items:center;*/
+    align-items: center;
+    flex-direction: column;
+}
+
+#button-restart{
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #7c1c37;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    background-color: rgb(183, 188, 192);
+}
+
+#button-restart:hover{
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #7c1c37;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    background-color: rgb(173, 189, 202);
 }
