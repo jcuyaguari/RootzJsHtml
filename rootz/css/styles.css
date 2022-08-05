@@ -1,5 +1,13 @@
 
-html{
+/* 
+ccsreference.io 
+htmlcolorcodes.com/es/
+https://colorhunt.co/palettes/neon
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+html {
     position: fixed;
     top: 0;
     left: 0;
@@ -7,4 +15,49 @@ html{
     bottom: 0;
     z-index: -1;
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+#select-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #436c87;
+    width: 700px;
+    height: 80px;
+    /* background-color: #e6edea; */
+    font-family: 'Righteous', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #EBD671;
+    font-size: 28px;
+}
+
+.cards {
+    display: flex; /*Coloca las tarjetas una a lado de la otra*/ 
+    gap:10px; /*Espaciado entre cajas*/
+}
+
+.cards-rootz {
+    width: 170px;
+    height: 100px;
+    background: #85C88A;
+    padding: 10px;
+    box-sizing: border-box;  /* Para no incrementar el tamano de la caja  */
+    border-radius: 10px;
+    display: flex;
+}
+
+.cards-rootz img{
+    width: 80px;
+}
+
+input {
+    display: none;
 }
