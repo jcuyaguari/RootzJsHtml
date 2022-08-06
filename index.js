@@ -17,9 +17,9 @@ function eleccion(jugada){
     }else if(jugada == 3){
         resultado = "TIJERA";
     }else{
-        resultado = "BAD ELECCION";
+        resultado = "Wrong :(";
     }
     return resultado;
 }
 ele = prompt('Elige')
-alert('HOLI -> '+eleccion(ele))
+alert('---> '+eleccion(ele))
