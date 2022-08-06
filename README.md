@@ -2,13 +2,13 @@
 
 ## Use Background
 
-- Use ===> [Link](ccsreference.io).
+- Use ccsreference    ===> [Link](ccsreference.io).
 
-- Use ===> [Link](htmlcolorcodes.com/es/).
+- Use htmlcolorcodes  ===> [Link](htmlcolorcodes.com/es/).
 
-- Use ===> [Link](https://colorhunt.co/palettes/neon).
+- Use colorhunt       ===> [Link](https://colorhunt.co/palettes/neon).
 
 
 ## Generator Background
 
-- Use ===> [Link](https://mycolor.space/gradient).
+- Use Gradient===> [Link](https://mycolor.space/gradient).
