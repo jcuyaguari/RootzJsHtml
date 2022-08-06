@@ -1,83 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta charset="utf-8"/>
-		<title>ROOT'Z GAME </title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="css/styles.css">
-	</head>
+
+<head>
+	<meta charset="utf-8" />
+	<title>ROOT'Z GAME </title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
 <body>
 
 	<section id="select-pet">
-		
 		<img class="up" src="./assets/zombieUp.png" alt="Zombie">
-
-		<h1 id="title" class="title">ROOT'Z GAME⚡🐳 🪴</h1>
-	
+		<h1 id="title" class="title">ROOT'Z GAME</h1>
 		<h2 class="subtitle">Choose the Pet </h2>
 
 		<div class="cards">
-
+			<input type="radio" name="pet" id="rowatter" />
 			<label class="cards-rootz" for="rowatter">
 				<p>Rowatter</p>
 				<img src="./assets/pvz-tendril.png" alt="Rowatter">
 			</label>
-			<input type="radio" name="pet" id="rowatter"/>
-
+			
+			<input type="radio" name="pet" id="roearth" />
 			<label class="cards-rootz" for="roearth">
 				<p>Roearth</p>
 				<img src="./assets/Squid-Game.png" alt="Roearth">
 			</label>
-			<input type="radio" name="pet" id="roearth"/>
-
+			
+			<input type="radio" name="pet" id="rofire" />
 			<label class="cards-rootz" for="rofire">
 				<p>Rofire</p>
 				<img src="./assets/pvz-hat.png" alt="Rofire">
 			</label>
-			<input type="radio" name="pet" id="rofire"/>
-		
+			
 		</div>
-
 		<button id="button-pet">Choose</button>
-        
-    </section>
+	</section>
 
 	<section id="select-attack">
 		<img class="up" src="./assets/zombieUp.png" alt="Zombie">
-
 		<h1 id="title" class="title">ROOT'Z GAME⚡🐳 🪴</h1>
-
 		<h2 class="subtitle">Choose the Attack: </h2>
 
-		<div>
+		<div class="attack-cards">
 			<button class="buttons-attack" id="button-fire"> FIRE⚡ </button>
 			<button class="buttons-attack" id="button-watter"> WATTER 🐳 </button>
 			<button class="buttons-attack" id="button-air"> AIR 🪴 </button>
 		</div>
-
 		<div id="message">
 			<p id="result">Just do it! 🐶</p>
-				
 			<section id="restart">
 				<button id="button-restart">Restart</button>
 			</section>
-		</div>		
-
-		<div>
-			<div id="attackPlayer">
-
-			</div>
-
-			<div id="attackEnemy">
-
-			</div>
-			<p>The Player Pet <span id="pet-player"> has: </span> => <span id="lifes-player"> 3 </span> power </p>
-			<p>The Enemy Pet <span id="pet-enemy"> has: </span> => <span id="lifes-enemy"> 3</span> power </p>
 		</div>
-		
-        
+		<div class="attacks">
+			<div class="attacksplayer">
+				<p id="lifes-player">3</p>
+				<p id="pet-player"></p> 
+				<div id="attackPlayer"></div>
+			</div>
+
+			<div class="attacksenemy">
+				<p id="lifes-enemy">3</p>
+				<p id="pet-enemy"></p>
+				<div id="attackEnemy"></div>
+			</div>
+		</div>
     </section>
 
 	<script src="./js/rootz.js"></script>
 </body>
+
 </html>

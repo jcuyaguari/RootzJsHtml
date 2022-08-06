@@ -10,12 +10,6 @@ https://colorhunt.co/palettes/neon
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 html {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
     /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
     background-image: linear-gradient(to right bottom, #1d1d16, #1e1f18, #1f201a, #21221c, #22231e);
     
@@ -50,7 +44,7 @@ html {
 
 .cards {
     display: flex; /*Coloca las tarjetas una a lado de la otra*/ 
-    gap:20px; /*Espaciado entre cajas*/
+    gap: 10px; /*Espaciado entre cajas*/
 }
 
 .cards-rootz {
@@ -59,7 +53,7 @@ html {
     background: #343333;
     padding: 10px;
     box-sizing: border-box;  /* Para no incrementar el tamano de la caja  */
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     color: aliceblue;
     justify-content: center;
@@ -67,7 +61,7 @@ html {
     font-size: 40px;
     font-family: 'Caveat', cursive;
 }
-
+    
 .cards-rootz img{
     width: 80px;
 }
@@ -84,12 +78,16 @@ html {
     font-family: 'Caveat', cursive;
 }
 
-
 input {
     display: none;
 }
 
+input:checked + label {
+    background: #922424;
+}
+
 #select-attack{
+    display:flex;
     flex-direction: column;
     align-items: center;
 }
@@ -138,4 +136,58 @@ input {
     font-size: 30px;
     font-family: 'Caveat', cursive;
     background-color: rgb(173, 189, 202);
+}
+
+/*
+-----------------------------------------------------------
+Para revisar el tema de  GRID
+https://css-tricks.com/snippets/css/complete-guide-grid/
+-----------------------------------------------------------
+*/
+
+.attacks{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#lifes-player, #lifes-enemy {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.attacksplayer, .attacksenemy{
+    display:flex;
+    flex-direction:column;
+    align-items:center
+} 
+
+/*
+-----------------------------------------------------------
+                    DISENO RESPONSIVO
+                https://responsively.app/
+-----------------------------------------------------------
+*/
+
+@media (max-width: 360px) {
+    .cards{
+        flex-direction: column;
+    }
+
+    .attack-cards{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .title {
+        color: #7c1c37;
+        width: 200px;
+        height: 80px;
+        /* background-color: #e6edea; */
+        font-family: 'Righteous', cursive;
+        font-size: 60px;
+        text-align: center;
+        margin-top: -25px;
+    }
 }
